@@ -1,0 +1,246 @@
+:root {
+    --link-color: #053352;
+  }
+  
+  body {
+    background-color: aliceblue;
+    font-family: Arial;
+    padding: 32px 0;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+  }
+  
+  li {
+    padding: 4px 0;
+  }
+  
+  h1, h2 {
+    margin: 8px 0;
+  }
+  
+  p {
+    margin: 0 0 16px 0;
+  }
+  
+  .container {
+    box-shadow: 0 0 16px grey;
+    /* width: 898px; */
+    width: 928px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 32px;
+    position: relative;
+  }
+  
+  .header-top {
+    display: flex;
+  }
+  
+  .profile-image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+  }
+  
+  .name-container {
+    margin-left: 32px;
+    width: calc(100% - 182px);
+  }
+
+
+.top-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+
+  .cv-icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 60px;
+    top: 0px;
+  }
+  
+  .cv-span {
+    font-size: 42px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .address-icon {
+      width: 14px;
+      height: 14px;
+      background-color: cornflowerblue;
+      margin-right: 6px;
+      padding: 8px;
+      vertical-align: middle;
+  }
+  
+  .circle {
+      border-radius: 50%;
+  }
+  
+  .contact-link {
+      color: var(--link-color);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--link-color);
+      transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .contact-link:hover {
+      color: var(--link-color);
+      border-bottom: 1px solid var(--link-color);
+  }
+  
+address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.git-in-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+}
+
+.git-in-container img {
+    margin: 20px;
+}
+
+/* main */
+section {
+  margin: 10px 0 24px;
+}
+
+section p {
+line-height: 1.25rem;
+}
+
+.exp-years h5 {
+font-weight: 400;
+}
+
+.end p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.exp-container {
+display: flex;
+justify-content: space-between;
+
+}
+.exp-years {
+text-align: right;
+}
+
+h4, h5 {
+margin: 0;
+font-weight: normal;
+display: inline;
+}
+
+.skill-level {
+display: flex;
+justify-content: space-around;
+}
+
+.skill-level p {
+margin: 0;
+padding: 0;
+}
+
+.skill-container {
+display: flex;
+justify-content: space-between;
+margin: -20px auto;
+}
+
+.nov-container, .beg-container {
+width: 50%;
+}
+
+.skill-icon {
+width: 20px;
+height: 20px;
+margin-right: 5px;
+}
+
+.skill-box {
+display: flex;
+flex-wrap: wrap;
+margin: 20px;
+list-style-type: none;
+}
+
+.skill-box li {
+display: flex;
+align-items: center;
+ margin: 10px 0;
+width: calc(50% - 20px);
+}
+
+.lang-list-all {
+display: flex;
+justify-content: space-around;
+}
+
+.lang-list-item {
+display: flex;
+align-items: center;
+}
+
+.lang-icon {
+width: 30px;
+height: 20px;
+border: black 1px solid;
+margin-right: 8px;
+}
+
+
+a.git-link {
+  color: var(--link-color);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+}
+
+a.git-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 8px;
+  left: 0;
+  background-color: #146296;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+
+a.git-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
